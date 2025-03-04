@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>YouTube Thumbnail Downloader</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Thumbnail Downloader</h1>
+      <div class="logo">
+        <img src="../images/icon48.png" alt="Logo">
+      </div>
+    </header>
+    
+    <div class="content">
+      <div class="input-group">
+        <input type="text" id="youtube-url" placeholder="Paste YouTube URL here">
+        <button id="fetch-btn">Fetch Thumbnails</button>
+      </div>
+      
+      <div class="status" id="status-message"></div>
+      
+      <div class="thumbnails" id="thumbnails-container">
+        <p class="initial-text">Thumbnails will appear here</p>
+      </div>
+    </div>
+    
+    <footer>
+      <p>Use this extension on any YouTube video page</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    width: 380px;
+    height: 500px;
+    overflow-y: auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%);
+    color: #ffffff;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #FF0000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #youtube-url {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  #youtube-url:focus {
+    background-color: #383838;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.3);
+  }
+  
+  #fetch-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF0000;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #fetch-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .status {
+    font-size: 14px;
+    color: #aaaaaa;
+    min-height: 20px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .initial-text {
+    color: #777777;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .thumbnail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail-item img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail-item img:hover {
+    transform: scale(1.02);
+  }
+  
+  .thumbnail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .thumbnail-quality {
+    font-size: 14px;
+    font-weight: 600;
+    color: #aaaaaa;
+  }
+  
+  .download-btn {
+    padding: 8px 15px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #3367D6;
+  }
+  
+  footer {
+    padding: 15px;
+    text-align: center;
+    color: #777777;
+    font-size: 12px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333333;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .thumbnail-item {
+    animation: fadeIn 0.5s ease;
+  }
